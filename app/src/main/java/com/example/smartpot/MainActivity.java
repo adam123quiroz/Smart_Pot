@@ -43,9 +43,9 @@ public class MainActivity extends AppCompatActivity {
 
     private List<Pot> loadList() {
         List<Pot> pots = new ArrayList<>();
-        pots.add(new Pot("https://image.flaticon.com/icons/png/512/25/25207.png", "Ilamantiu", "gg"));
-        pots.add(new Pot("https://image.flaticon.com/icons/png/512/25/25207.png", "Ilamantiu", "gg"));
-        pots.add(new Pot("https://image.flaticon.com/icons/png/512/25/25207.png", "Ilamantiu", "gg"));
+        pots.add(new Pot(R.drawable.plant2, "Bugabilla", "Loremsadbsasahidjhadijhsalidjsa aksjdhsakl nl;oxjdljsan"));
+        pots.add(new Pot(R.drawable.plant1, "Clavel", "ASKJLDhsa aksdhkasb k uahoil hkaushd"));
+        pots.add(new Pot(R.drawable.plant2,"Ilamantiu", "alsdha lasidhoalki hjalishli hjai;lsjdpi jna"));
 
         return pots;
     }

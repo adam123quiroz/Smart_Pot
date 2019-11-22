@@ -7,15 +7,15 @@ import java.net.URL;
 
 public class Pot {
     private Long id;
-    private Drawable image;
+    private int image;
     private String name;
     private String description;
 
     public Pot() {
     }
 
-    public Pot(String url, String name, String description) {
-        setImage(url);
+    public Pot(int image, String name, String description) {
+        this.image = image;
         this.name = name;
         this.description = description;
     }
@@ -28,18 +28,12 @@ public class Pot {
         this.id = id;
     }
 
-    public Drawable getImage() {
+    public int getImage() {
         return image;
     }
 
-    public void setImage(String url) {
-        try {
-            InputStream is = (InputStream) new URL(url).getContent();
-            Drawable d = Drawable.createFromStream(is, "src name");
-            this.image = d;
-        } catch (Exception e) {
-            this.image = null;
-        }
+    public void setImage(int image) {
+        this.image = image;
     }
 
     public String getName() {

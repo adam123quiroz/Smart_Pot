@@ -1,6 +1,5 @@
 package com.example.smartpot.adapters;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -56,7 +55,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     public void onBindViewHolder(MyViewHolder holder, int position) {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
-        holder.imageView.setImageDrawable(potList.get(position).getImage());
+        holder.imageView.setImageResource(potList.get(position).getImage());
         holder.title.setText(potList.get(position).getName());
         holder.description.setText(potList.get(position).getDescription());
     }
