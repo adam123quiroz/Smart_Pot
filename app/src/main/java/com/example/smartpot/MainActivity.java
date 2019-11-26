@@ -9,8 +9,8 @@ import android.os.Bundle;
 import com.example.smartpot.adapters.MyAdapter;
 import com.example.smartpot.entity.Pot;
 import com.example.smartpot.thread.SeriesDataSensor;
-//import com.google.firebase.database.DatabaseReference;
-//import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         // specify an adapter (see also next example)
         mAdapter = new MyAdapter(potList);
         recyclerView.setAdapter(mAdapter);
-//        addData();
+        addData();
 
 
         Thread thread = new Thread(new SeriesDataSensor());
@@ -63,12 +63,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Crea datos de plantas
-//    public void addData(){
-//        Pot pot = new Pot(R.drawable.plant1, "Clavel", "ASKJLDhsa aksdhkasb k uahoil hkaushd");
-//
-//        FirebaseDatabase database = FirebaseDatabase.getInstance();
-//        DatabaseReference reference = database.getReference(PATH_FODD_PLANTA);
-//
-//        reference.push().setValue(pot);
-//    }
+    public void addData(){
+        Pot pot = new Pot(R.drawable.plant1, "Clavel", "ASKJLDhsa aksdhkasb k uahoil hkaushd");
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference reference = database.getReference(PATH_FODD_PLANTA);
+
+        reference.push().setValue(pot);
+    }
 }
