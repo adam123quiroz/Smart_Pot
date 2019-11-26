@@ -47,4 +47,14 @@ public class PotSensorData {
     public void setAmbientHumidity(double ambientHumidity) {
         this.ambientHumidity = ambientHumidity;
     }
+
+    @Override
+    public String toString() {
+        return "PotSensorData{" +
+                "ambientTemperature=" + ambientTemperature +
+                ", light=" + light +
+                ", earthHumidity=" + earthHumidity +
+                ", ambientHumidity=" + ambientHumidity +
+                '}';
+    }
 }

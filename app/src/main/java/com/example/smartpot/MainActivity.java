@@ -9,6 +9,7 @@ import android.os.Bundle;
 import com.example.smartpot.adapters.MyAdapter;
 import com.example.smartpot.entity.Pot;
 import com.example.smartpot.entity.PotSensorData;
+import com.example.smartpot.thread.SeriesDataSensor;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -18,7 +19,6 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private static final String PATH_FODD_PLANTA = "planta";
-    private static final String PATH_FODD_DATOS = "datos";
     private RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
@@ -46,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
         mAdapter = new MyAdapter(potList);
         recyclerView.setAdapter(mAdapter);
         addData();
+
+        Thread thread = new Thread(new SeriesDataSensor());
+        thread.start();
     }
 
     private List<Pot> loadList() {
@@ -68,20 +71,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    //Crea datos de plantas
-    public void addDataSensor(){
-        //FIXME aqui crear los datos random
 
-        PotSensorData potSensorData = new PotSensorData("","","","",);
-
-        //Instancia de la base de Datos
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        //Apuntar a PATH_FOOD_DATOS = datos
-        //otra rama dentro de la BDD
-        DatabaseReference reference = database.getReference(PATH_FODD_DATOS);
-
-        //envia la instancia del objeto
-        reference.setValue(potSensorData);
-    }
 
 }
