@@ -11,5 +11,14 @@
             android:scrollbars="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/button_pot"
+            android:layout_below="@+id/my_recycler_view"
+            android:layout_width="wrap_content"
+            android:text="Planta"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+
+    </Button>
 
 </RelativeLayout>
