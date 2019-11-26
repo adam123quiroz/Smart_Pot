@@ -15,6 +15,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
+    private static final String PATH_FODD = "planta";
     private RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
@@ -58,9 +60,9 @@ public class MainActivity extends AppCompatActivity {
         Pot pot = new Pot(R.drawable.plant2, "Bugabilla", "Loremsadbsasahidjhadijhsalidjsa aksjdhsakl nl;oxjdljsan");
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference reference = database.getReference();
+        DatabaseReference reference = database.getReference(PATH_FODD);
 
-        reference.setValue("Hello, World!");
+        reference.setValue(pot);
     }
 
 }
