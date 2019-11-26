@@ -4,8 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
+import com.example.smartpot.activity.PotActivity;
 import com.example.smartpot.adapters.MyAdapter;
 import com.example.smartpot.entity.Pot;
 import com.example.smartpot.thread.SeriesDataSensor;
@@ -24,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
 
+    private Button button;
+
     private List<Pot> potList;
 
     @Override
@@ -31,6 +37,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         recyclerView = findViewById(R.id.my_recycler_view);
+        button = findViewById(R.id.button_pot);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, PotActivity.class);
+                startActivity(intent);
+            }
+        });
 
         //load list
         potList = loadList();
