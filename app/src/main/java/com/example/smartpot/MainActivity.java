@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         // specify an adapter (see also next example)
         mAdapter = new MyAdapter(potList);
         recyclerView.setAdapter(mAdapter);
+        addData();
     }
 
     private List<Pot> loadList() {
@@ -59,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference reference = database.getReference();
 
+        reference.setValue("Hello, World!");
     }
 
 }
