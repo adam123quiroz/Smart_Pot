@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
     public void addDataSensor(){
         //FIXME aqui crear los datos random
 
-        PotSensorData potSensorData = new PotSensorData("","","","",);
+        PotSensorData potSensorData = new PotSensorData(0.0,0.0,0.0,0.0);
 
         //Instancia de la base de Datos
         FirebaseDatabase database = FirebaseDatabase.getInstance();
