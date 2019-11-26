@@ -16,9 +16,37 @@
             android:layout_margin="50dp"
             android:gravity="center"/>
     <ProgressBar
+            android:id="@+id/progress_bar"
             android:layout_width="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/title_pot"
+            android:layout_centerInParent="true"/>
+    <TextView
+            android:id="@+id/text_view_temperature"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="eqrewer"
+            android:layout_below="@+id/progress_bar"
+            android:layout_centerInParent="true"/>
+    <TextView
+            android:id="@+id/text_view_humidity_earth"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_temperature"
+            android:layout_centerInParent="true"/>
+    <TextView
+            android:id="@+id/text_view_humidity_ambient"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_humidity_earth"
             android:layout_centerInParent="true"/>
 
 </RelativeLayout>
