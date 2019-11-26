@@ -8,15 +8,12 @@ import android.os.Bundle;
 
 import com.example.smartpot.adapters.MyAdapter;
 import com.example.smartpot.entity.Pot;
-import com.example.smartpot.entity.PotSensorData;
 import com.example.smartpot.thread.SeriesDataSensor;
 //import com.google.firebase.database.DatabaseReference;
 //import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
 

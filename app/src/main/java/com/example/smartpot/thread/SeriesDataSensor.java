@@ -19,8 +19,8 @@ public class SeriesDataSensor implements Runnable {
         do {
             try {
                 double ambientTemperature = ioT.getDataSet(0);
-                double earthHumidity = ioT.getDataSet(2);
-                double ambientHumidity = ioT.getDataSet(3);
+                double earthHumidity = ioT.getDataSet(1);
+                double ambientHumidity = ioT.getDataSet(2);
 
 
                 PotSensorData potSensorData = new PotSensorData(ambientTemperature, ambientHumidity, earthHumidity);

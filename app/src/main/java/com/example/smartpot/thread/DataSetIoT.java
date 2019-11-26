@@ -1,7 +1,5 @@
 package com.example.smartpot.thread;
 
-import android.util.Log;
-
 public class DataSetIoT {
     private double[][] data;
 
