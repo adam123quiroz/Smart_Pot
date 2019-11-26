@@ -8,6 +8,7 @@ import android.os.Bundle;
 
 import com.example.smartpot.adapters.MyAdapter;
 import com.example.smartpot.entity.Pot;
+import com.example.smartpot.entity.PotSensorData;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -56,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         return pots;
     }
 
-
+    //Crea datos de plantas
     public void addData(){
         Pot pot = new Pot(R.drawable.plant2, "Bugabilla", "Loremsadbsasahidjhadijhsalidjsa aksjdhsakl nl;oxjdljsan");
 
@@ -64,6 +65,23 @@ public class MainActivity extends AppCompatActivity {
         DatabaseReference reference = database.getReference(PATH_FODD_PLANTA);
 
         reference.setValue(pot);
+    }
+
+
+    //Crea datos de plantas
+    public void addDataSensor(){
+        //FIXME aqui crear los datos random
+
+        PotSensorData potSensorData = new PotSensorData("","","","",);
+
+        //Instancia de la base de Datos
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        //Apuntar a PATH_FOOD_DATOS = datos
+        //otra rama dentro de la BDD
+        DatabaseReference reference = database.getReference(PATH_FODD_DATOS);
+
+        //envia la instancia del objeto
+        reference.setValue(potSensorData);
     }
 
 }
