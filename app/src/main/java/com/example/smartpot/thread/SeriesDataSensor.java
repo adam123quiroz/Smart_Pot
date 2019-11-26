@@ -23,6 +23,7 @@ public class SeriesDataSensor implements Runnable {
                 double li = tempH.getSeries();
 
                 PotSensorData potSensorData = new PotSensorData(temp, li, humEa, humAm);
+                addDataSensor(potSensorData);
 
                 Log.i("AHQC", potSensorData.toString());
 
