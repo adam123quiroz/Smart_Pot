@@ -8,6 +8,8 @@ import android.os.Bundle;
 
 import com.example.smartpot.adapters.MyAdapter;
 import com.example.smartpot.entity.Pot;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,6 +50,15 @@ public class MainActivity extends AppCompatActivity {
         pots.add(new Pot(R.drawable.plant2,"Ilamantiu", "alsdha lasidhoalki hjalishli hjai;lsjdpi jna"));
 
         return pots;
+    }
+
+
+    public void addData(){
+        Pot pot = new Pot(R.drawable.plant2, "Bugabilla", "Loremsadbsasahidjhadijhsalidjsa aksjdhsakl nl;oxjdljsan");
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference reference = database.getReference();
+
     }
 
 }

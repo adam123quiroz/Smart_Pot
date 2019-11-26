@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "693974507397",
+    "firebase_url": "https://smartplant-f970b.firebaseio.com",
+    "project_id": "smartplant-f970b",
+    "storage_bucket": "smartplant-f970b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:693974507397:android:1fd1e15b3e4cbfc84deeec",
+        "android_client_info": {
+          "package_name": "com.example.smartpot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "693974507397-pqf6h8b7iqbi8e200guqeqdibvndfb6f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_ZK4FETHP0qfb9nzhWeYQsTvZ4mEaqjo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "693974507397-pqf6h8b7iqbi8e200guqeqdibvndfb6f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
