@@ -3,9 +3,10 @@ package com.example.smartpot.entity;
 import android.graphics.drawable.Drawable;
 
 import java.io.InputStream;
+import java.io.Serializable;
 import java.net.URL;
 
-public class Pot {
+public class Pot implements Serializable {
     private Long id;
     private int image;
     private String name;
@@ -50,5 +51,15 @@ public class Pot {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    @Override
+    public String toString() {
+        return "Pot{" +
+                "id=" + id +
+                ", image=" + image +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                '}';
     }
 }

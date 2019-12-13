@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "693974507397-ij28i6dbsclmum5tv7le55ar7l3clfvs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smartpot",
+            "certificate_hash": "09c84d178063116f0600217f8420db0d2a960330"
+          }
+        },
+        {
           "client_id": "693974507397-pqf6h8b7iqbi8e200guqeqdibvndfb6f.apps.googleusercontent.com",
           "client_type": 3
         }

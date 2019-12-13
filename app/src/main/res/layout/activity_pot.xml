@@ -24,29 +24,55 @@
             android:layout_below="@+id/title_pot"
             android:layout_centerInParent="true"/>
     <TextView
+        android:id="@+id/text_view_temperature_title"
+        android:layout_marginBottom="40dp"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress_bar"
+        android:text="Temperatura Ambiente"
+        android:layout_centerInParent="true"/>
+    <TextView
             android:id="@+id/text_view_temperature"
             android:layout_marginBottom="40dp"
-            android:layout_marginTop="40dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="eqrewer"
-            android:layout_below="@+id/progress_bar"
+            android:layout_below="@+id/text_view_temperature_title"
             android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/text_view_humidity_earth_title"
+        android:layout_marginBottom="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/text_view_temperature"
+        android:text="Humedad de la Tierra"
+        android:layout_centerInParent="true"/>
     <TextView
             android:id="@+id/text_view_humidity_earth"
             android:layout_marginBottom="40dp"
-            android:layout_marginTop="40dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/text_view_temperature"
+            android:layout_below="@+id/text_view_humidity_earth_title"
             android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/text_view_humidity_ambient_title"
+        android:layout_marginBottom="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/text_view_humidity_earth"
+        android:text="Humedad Ambiente"
+        android:layout_centerInParent="true"/>
     <TextView
             android:id="@+id/text_view_humidity_ambient"
             android:layout_marginBottom="40dp"
-            android:layout_marginTop="40dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/text_view_humidity_earth"
+            android:layout_below="@+id/text_view_humidity_ambient_title"
             android:layout_centerInParent="true"/>
 
 </RelativeLayout>
